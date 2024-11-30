@@ -67,11 +67,28 @@
             gap: 1rem;
             justify-content: center;
         }
-        .images-container img {
-            width: 100px;
-            height: 100px;
+        .image-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .image-box img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             border-radius: 8px;
+        }
+        .image-box .image-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 2px 0;
+            border-radius: 0 0 8px 8px;
         }
         footer {
             background-color: #333;
@@ -114,6 +131,25 @@
             <img src="https://via.placeholder.com/100" alt="Picture 2">
             <img src="https://via.placeholder.com/100" alt="Picture 3">
             <img src="https://via.placeholder.com/100" alt="Picture 4">
+        </div>
+                <!-- Images Section with Text -->
+        <div class="images-container">
+            <div class="image-box">
+                <img src="https://github.com/MattiasPersson209/Hyr-en-jamt/blob/main/Hyrenjamt1.png?raw=true" alt="Picture 1">
+                <div class="image-text">Image 1</div>
+            </div>
+            <div class="image-box">
+                <img src="https://via.placeholder.com/100" alt="Picture 2">
+                <div class="image-text">Image 2</div>
+            </div>
+            <div class="image-box">
+                <img src="https://via.placeholder.com/100" alt="Picture 3">
+                <div class="image-text">Image 3</div>
+            </div>
+            <div class="image-box">
+                <img src="https://via.placeholder.com/100" alt="Picture 4">
+                <div class="image-text">Image 4</div>
+            </div>
         </div>
     </main>
     <footer>
